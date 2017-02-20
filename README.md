@@ -40,7 +40,7 @@ management, etc.) this is the time to mention it.
 * This is a great place to stick any warnings.
 * Can be in list or paragraph form.
 
-##t # Setup Requirements
+### Setup Requirements
 
 This module requires pluginsync enabled 
 
