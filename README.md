@@ -40,22 +40,27 @@ management, etc.) this is the time to mention it.
 * This is a great place to stick any warnings.
 * Can be in list or paragraph form.
 
-### Setup Requirements
+##t # Setup Requirements
 
 This module requires pluginsync enabled 
 
 ### Beginning with atom
 
-The very basic steps needed for a user to get the module up and running.
-
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+```puppet
+class { 'atom':
+  atom_user => 'jprats',
+}
+```
 
 ## Usage
 
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
+
+```puppet
+atom_plugin { 'language-puppet':
+  ensure => 'present',
+  atom_user => $atom::atom_user,
+}
+``` 
 
 ## Reference
 
