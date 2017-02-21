@@ -3,77 +3,77 @@ class atom::config inherits atom {
   if($atom::add_default_plugins)
   {
     atom_plugin { 'aligner':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'aligner-puppet':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'atom-alignment':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'autocomplete-ruby':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'block-comment':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'dockerletion':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'git-plus':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'language-docker':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'language-puppet':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'language-rspec':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'linter':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'markdown-writer':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'minimap':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'minimap-git-diff':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
 
     atom_plugin { 'rspec-snippets':
-      ensure => 'present',
+      ensure    => 'present',
       atom_user => $atom::atom_user,
     }
   }
