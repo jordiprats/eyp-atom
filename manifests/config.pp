@@ -27,7 +27,17 @@ class atom::config inherits atom {
       atom_user => $atom::atom_user,
     }
 
+    atom_plugin { 'dockerletion':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
     atom_plugin { 'git-plus':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'language-docker':
       ensure => 'present',
       atom_user => $atom::atom_user,
     }
@@ -43,6 +53,26 @@ class atom::config inherits atom {
     }
 
     atom_plugin { 'linter':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'markdown-writer':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'minimap':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'minimap-git-diff':
+      ensure => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'rspec-snippets':
       ensure => 'present',
       atom_user => $atom::atom_user,
     }
