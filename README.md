@@ -42,7 +42,8 @@ This module can install the atom editor and manage it's plugins. By default (can
 
 ### What atom affects
 
-* 
+* can install atom using **atom repo** (https://atom.io/download/rpm and https://atom.io/download/deb)
+* can install atom plugins using **atom_plugin** type
 
 ### Setup Requirements
 
@@ -71,15 +72,11 @@ atom_plugin { 'language-puppet':
 
 #### atom
 
-* **manage_package**:        = true,
-* **package_ensure**:        = 'installed',
-* **manage_service**:        = true,
-* **manage_docker_service**: = true,
-* **service_ensure**:        = 'running',
-* **service_enable**:        = true,
-* **srcdir**:                = '/usr/local/src',
-* **add_default_plugins**:   = true,
-* **atom_user**: (default: root)
+* **manage_package**: manage atom package (default: true)
+* **package_ensure**: atom package ensure (default: installed)
+* **srcdir**: place to store temporal files (default: /usr/local/src)
+* **add_default_plugins**: whether to install default plugins (default: true)
+* **atom_user**: install plugins to this user (default: root)
 
 ### types
 
