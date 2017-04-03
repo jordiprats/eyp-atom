@@ -98,7 +98,7 @@ have some test to check both presence and absence of any feature
 
 ### TODO
 
-TODO list
+nothing so far
 
 ### Contributing
 
