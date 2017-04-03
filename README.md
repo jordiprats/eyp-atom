@@ -42,7 +42,7 @@ management, etc.) this is the time to mention it.
 
 ### Setup Requirements
 
-This module requires pluginsync enabled 
+This module requires pluginsync enabled
 
 ### Beginning with atom
 
@@ -54,24 +54,41 @@ class { 'atom':
 
 ## Usage
 
-
 ```puppet
 atom_plugin { 'language-puppet':
   ensure => 'present',
   atom_user => $atom::atom_user,
 }
-``` 
+```
 
 ## Reference
 
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
+### classes
+
+#### atom
+
+* **manage_package**:        = true,
+* **package_ensure**:        = 'installed',
+* **manage_service**:        = true,
+* **manage_docker_service**: = true,
+* **service_ensure**:        = 'running',
+* **service_enable**:        = true,
+* **srcdir**:                = '/usr/local/src',
+* **add_default_plugins**:   = true,
+* **atom_user**: (default: root)
+
+### types
+
+#### atom_plugin
+
+* **name**: atom plugin to manage
+* **atom_user**: (default: root)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+Tested on:
+* Ubuntu 14.04
+* Ubuntu 16.04
 
 ## Development
 
