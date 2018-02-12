@@ -76,5 +76,25 @@ class atom::config inherits atom {
       ensure    => 'present',
       atom_user => $atom::atom_user,
     }
+
+    atom_plugin { 'aligner-javascript':
+      ensure    => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'linter-ui-default':
+      ensure    => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'intentions':
+      ensure    => 'present',
+      atom_user => $atom::atom_user,
+    }
+
+    atom_plugin { 'busy-signal':
+      ensure    => 'present',
+      atom_user => $atom::atom_user,
+    }
   }
 }
